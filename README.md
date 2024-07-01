@@ -48,6 +48,10 @@ Start the development server:
 
 python manage.py runserver
 
+# admin:
+userneme:sabari
+password:djangosabari
+
 # Usage
 Access the Django Admin interface at http://127.0.0.1:8000/admin/ and log in with the superuser credentials.
 Add student and subject marks entries via the admin interface.
