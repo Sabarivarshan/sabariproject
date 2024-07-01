@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <p>Name: {{ student.name }}</p>
+    <p>Age: {{ student.age }}</p>
+    <p>Email: {{ student.email }}</p>
+    <p>City: {{ student.city }}</p>
+
+    <h2>Subject Marks</h2>
+    {% if subject_marks %}
+        <table border="1">
+            <tr>
+                <th>Language 1</th>
+                <th>Language 2</th>
+                <th>Acting</th>
+                <th>Dance</th>
+            </tr>
+            <tr>
+                <td>{{ subject_marks.language1 }}</td>
+                <td>{{ subject_marks.language2 }}</td>
+                <td>{{ subject_marks.acting }}</td>
+                <td>{{ subject_marks.dance }}</td>
+            </tr>
+        </table>
+    {% else %}
+        <p>No subject marks available.</p>
+    {% endif %}
+</body>
+</html>
