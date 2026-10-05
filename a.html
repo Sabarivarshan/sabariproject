@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MAHATMA SCHOOL</title>
+        <style>
+            .hello{
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                 gap: 30px;
+            }
+            .hello a.hey{
+                color:goldenrod
+            }
+            .hello ul{
+                list-style: none;
+                margin:0;
+                padding:0;
+            }
+            .hello li{
+                display:inline-block;
+                margin: 0 15px;
+                
+            }
+            .hello a{
+                text-decoration: none;
+                color:navy;
+                font-weight: bold;
+            }
+            .welcome{
+                position: relative;
+                width: 100%;
+                max-width: 1500px;
+                height: 600px;
+                margin:auto;
+                overflow: hidden;
+            }
+            .welcome img{
+                position:absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height:100%;
+                object-fit: cover;
+                opacity: 0;
+                animation: fade 5s infinite;
+                
+            }
+             .welcome img:nth-child(1){
+            animation-delay:0s;
+        }
+
+        .welcome img:nth-child(2){
+            animation-delay:4s;
+        }
+
+              @keyframes fade{
+            0%,100%{
+                opacity:0;
+            }
+            10%,40%{
+                opacity:1;
+            }
+            50%,90%{
+                opacity:0;
+            }
+           
+        }
+            .hyy{
+    position: fixed;
+    left: 0;
+    top: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.hyy a{
+    width: 60px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    writing-mode:vertical-rl;
+    transform: rotate(360deg);
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+     border-radius: 0 30px 30px 0;
+    
+    
+
+}
+
+.spotlight{
+    background-color: #f4b400;
+}
+
+.admission{
+    background-color: #34c759;
+}
+
+.fee{
+    background-color: #4285f4;
+}
+.mm{
+    padding: 100px;
+    font-size:x-large;
+    text-align:left;
+}
+.dd{
+    align-items: end;
+}
+ .about{
+            width:100%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:80px;
+            background-image:url("https://www.mahatmaschools.com/wp-content/themes/mahatma/images/academics/pioneer-span.svg");
+            background-repeat:no-repeat;
+            background-size:cover;
+            min-height:600px;
+        }
+
+        .left{
+            width:55%;
+        }
+
+        .left h1{
+            font-size:70px;
+            color:#222;
+            margin-bottom:35px;
+        }
+
+        .left p{
+            font-size:30px;
+            line-height:1.8;
+            color:#5f6670;
+        }
+
+        .right{
+            width:40%;
+            text-align:right;
+        }
+
+        .right img{
+            width:100%;
+            max-width:650px;
+            border-radius:8px;
+        }
+
+        @media(max-width:900px){
+
+            .about{
+                flex-direction:column;
+                padding:40px;
+            }
+
+            .left,
+            .right{
+                width:80%;
+            }
+
+            .left h1{
+                font-size:45px;
+            }
+
+            .left p{
+                font-size:22px;
+            }
+
+            .right{
+                margin-top:40px;
+                text-align:center;
+            }
+
+            .right img{
+                width:80%;
+            }
+        }
+        </style>
+    
+
+    </head>
+    <body>
+        
+        <div class="hello">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSydfqprXRHoT9pPJin26XmY_D9FIKBtNkG6PBl1hgrxvzOxn_ZsXK9DUo&s=10"width="300">
+
+             <nav>
+                <ul>
+                    
+                    <li><a href="#HOME" class="hey">HOME</a></li>
+                    <li><a href="#foundation">FOUNDATION</a></li>
+                    <li><a href="#about us">ABOUT US</a></li>
+                    <li><a href="admission">ADMISSION</a></li>
+                    <li><a href="carrers">CAREERS</a></li>
+                    <li><a href="mahatma ela">MAHATMA ELA</a></li>
+                    <li><a href="blog">BLOG</a></li>
+                    <li><a href="alumini">ALUMINI</a></li>
+                    <li><a href="contact">CONTACT</a></li>
+                
+
+                </ul>
+            </nav>
+
+        </div>
+        <div class="hyy">
+            <a href="*" class="spotlight">SPOTLIGHT</a>
+            <a href="*" class="admission">ADMISSION</a>
+            <a href="*" class="fee">FEE</a>
+
+        </div>
+        <div class="welcome">
+            <img src="https://www.mahatmaschools.com/wp-content/uploads/2026/06/18.jpg.jpeg"width="1500">
+        <img src="https://www.mahatmaschools.com/wp-content/uploads/2026/07/36.jpg.jpeg">
+        <img src="https://www.mahatmaschools.com/wp-content/themes/mahatma/images/academics/pioneer-span.svg">
+        
+
+        </div>
+        <section class="about">
+             <div class="left">
+                 <h1>Truth Triumphs</h1>
+               <p>Mahatma: a group of schools founded in the year 1983 in Madurai. Mahatma offers a 
+rich experience for children by offering value-based education which inculcates
+ confidence, intellectual curiosity, harmony and creativity to become renowned citizens
+ of tomorrow.</p>
+
+             </div>
+             
+             <div class="right">
+                
+               <img src="C:\Users\sabar\OneDrive\Pictures\Screenshots\Screenshot 2026-07-25 124249.png"width="650"alt="school">
+
+             </div>
+
+
+        </section>
+       
+              
+              
+        </div>
+        <img src="C:\Users\sabar\OneDrive\Pictures\Screenshots\Screenshot 2026-07-25 190953.png">
+        <img src="C:\Users\sabar\OneDrive\Pictures\Screenshots\Screenshot 2026-07-25 191131.png">
+        <img src="C:\Users\sabar\OneDrive\Pictures\Screenshots\Screenshot 2026-07-25 192549.png">
+        <footer style="width:100%; background:#1c1c1c; color:white; padding:50px 100px; display:flex; justify-content:space-between; align-items:center; margin-top:50px; box-sizing:border-box;">
+
+    <div style="width:70%;">
+
+        <p style="font-size:15px; line-height:2; margin:0;">E. Rm. E. Rengasamy Educational Foundation</p>
+
+        <p style="font-size:15px; line-height:2; margin:0;">Gopalakrishnan Grounds, 273, K. K. Nagar, Gandhi Nagar, Madurai - 625020.</p>
+
+        <p style="font-size:15px; line-height:2; margin:0;">correspondent@mahatmaschools.com</p>
+
+        <p style="font-size:15px; line-height:2; margin:0;">© Mahatma. All Rights Reserved.</p>
+
+        <p style="font-size:15px; line-height:2; margin:0;">Site by Acodez</p>
+
+    </div>
+
+    <div style="display:flex; gap:20px; align-items:center;">
+
+        <a href="#" style="width:55px; height:55px; background:#f7a51b; color:white; text-decoration:none; border-radius:50%; display:flex; justify-content:center; align-items:center; font-size:24px; font-weight:bold;">▶</a>
+
+        <a href="#" style="width:55px; height:55px; background:#f7a51b; color:white; text-decoration:none; border-radius:50%; display:flex; justify-content:center; align-items:center; font-size:24px; font-weight:bold;">◎</a>
+
+        <a href="#" style="width:55px; height:55px; background:#f7a51b; color:white; text-decoration:none; border-radius:50%; display:flex; justify-content:center; align-items:center; font-size:24px; font-weight:bold;">f</a>
+
+        <a href="#" style="width:55px; height:55px; background:#f7a51b; color:white; text-decoration:none; border-radius:50%; display:flex; justify-content:center; align-items:center; font-size:24px; font-weight:bold;">in</a>
+
+    </div>
+
+</footer>
+
+        
+      
+       
+        
+     
+        
+    </body>
+</html>
